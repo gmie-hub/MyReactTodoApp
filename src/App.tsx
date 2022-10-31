@@ -104,9 +104,9 @@ const App : React.FC = () => {
           </Button>
         </Container>
       </Modal>
-      {allTodo.map(({ description, name }, ind) => {
+      {allTodo.map(({ description, name }, index) => {
         return (
-          <React.Fragment key={ind}>
+          <React.Fragment key={index}>
             <CustomCard
               name={name}
               description={description}
